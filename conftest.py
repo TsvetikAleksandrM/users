@@ -10,5 +10,4 @@ def client():
 
 @pytest.fixture()
 def data():
-    data = rd().all_info()
-    return data
+    return rd().all_info()
