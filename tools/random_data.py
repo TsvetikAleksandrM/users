@@ -29,7 +29,7 @@ class RndData:
 
         return ''.join(random.choice(digits) for _ in range(length))
 
-    def all_info(self):
+    def all_data(self):
         email = self.rnd_email()
         name = self.rnd_name()
         password = self.rnd_password()
