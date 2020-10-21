@@ -1,5 +1,4 @@
 # import allure
-# import pytest
 #
 #
 # class TestCreateUserEmail:
@@ -12,7 +11,7 @@
 #                                             companies=data_user['companies']
 #                                             )
 #         print(api_list_users.json())
-        # with allure.step(f"Запрос отправлен. Проверяем, что отправленный email совпадает с тем,"
-        #                  f" что вернулось в ответе."):
-        #     assert api_list_users.json()['email'] == data['email'], \
-        #         f"Неверный email в ответе, получен {api_list_users.json()['email']}"
+#         print(data_user['email'])
+#         print(data_user['name'])
+#         print(data_user['tasks'])
+#         print(data_user['companies'])
