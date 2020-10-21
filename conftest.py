@@ -10,4 +10,9 @@ def client():
 
 @pytest.fixture()
 def data():
-    return rd().all_data()
+    return rd().all_registration_data()
+
+
+@pytest.fixture()
+def data_user():
+    return rd().all_data_create_user()

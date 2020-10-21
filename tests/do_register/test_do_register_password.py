@@ -19,7 +19,6 @@ class TestDoRegisterPassword:
         api_list_users = client.do_register(email=data['email'],
                                             name=data['password'],
                                             password='.....')
-        with allure.step(f"Проверяем ответ"):
-            assert api_list_users.json() == {"type": "error",
-                                             "message": "Некоректный password ....."}, \
+        with allure.step(f'Проверяем ответ'):
+            assert api_list_users.json() == {"type": "error", "message": "Некоректный password ....."}, \
                 f"Неверный ответ, получен {api_list_users.json()}"

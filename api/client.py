@@ -13,3 +13,7 @@ class Client:
     def do_register(self, **kwargs):
         with allure.step(f'Регистрация на ресурсе: {self.base_address}'):
             return requests.post(url=f'{self.base_address}tasks/rest/doregister', data=kwargs)
+
+    def create_user(self, **kwargs):
+        with allure.step(f'Создание нового пользователя: {self.base_address}'):
+            return requests.post(url=f'{self.base_address}tasks/rest/createuser', data=kwargs)
