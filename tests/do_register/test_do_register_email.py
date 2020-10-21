@@ -2,6 +2,7 @@ import allure
 import pytest
 
 
+@allure.story('Do Register Email')
 class TestDoRegisterEmail:
 
     @allure.title('Проверка  обязательного параметра email')

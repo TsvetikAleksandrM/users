@@ -2,6 +2,7 @@ import allure
 import pytest
 
 
+@allure.story('Do Register Password')
 class TestDoRegisterPassword:
 
     @allure.title('Проверка ответа, запрос отправлен без обязательного параметра password')
