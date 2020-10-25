@@ -16,3 +16,8 @@ def data():
 @pytest.fixture()
 def data_user():
     return rd().all_data_create_user()
+
+
+@pytest.fixture()
+def data_company():
+    return rd().all_data_create_company()
